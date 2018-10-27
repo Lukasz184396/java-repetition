@@ -5,6 +5,8 @@ public class TestCaseSensitivityOfJava {
         TestCaseSensitivityOfJava testCaseSensitivityOfJava = new TestCaseSensitivityOfJava();
         testCaseSensitivityOfJava.smallLetterStarting();
         testCaseSensitivityOfJava.SmallLetterStarting();
+        String Public = "reserved words stars from small letter so Public is ok but public not";
+        System.out.println(Public);
     }
 
     public void smallLetterStarting() {
