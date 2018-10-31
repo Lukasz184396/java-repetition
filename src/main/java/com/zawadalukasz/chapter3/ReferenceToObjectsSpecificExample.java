@@ -18,5 +18,10 @@ public class ReferenceToObjectsSpecificExample {
          * We have a String[] referred to from an Object[] variable.
          * At runtime, the code throws an ArrayStoreException.!!!
          */
+        // objects[0]                   //it has only objects methods
+        againStrings[0].indexOf(5);     //it hast String method after casting from Object to String
+        // when comment line 9 !!!*****************************************************************************
+        objects[0] = new String();            //it will be ok
+        objects[0] = new Object();            // but this not it needs to be String
     }
 }
