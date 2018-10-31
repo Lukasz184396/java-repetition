@@ -1,6 +1,6 @@
 package com.zawadalukasz.chapter3;
 
-public class StringReplaceTest {
+public class StringReplaceAndIndexOfTest {
 
     public static void main(String[] args) {
         System.out.println("abcabc".replace('a', 'A')); // AbcAbc
