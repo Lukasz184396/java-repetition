@@ -11,7 +11,7 @@ public class StringReplaceAndIndexOfTest {
         System.out.println("trimmed = " + trimmed);
         String lowercase = trimmed.toLowerCase(); //"animal"
         System.out.println("lowercase = " + lowercase);
-        String result = lowercase.replace('a', 'A'); //"Animal"
+        String result = lowercase.replace('a', 'A'); //"AnimAl"
         System.out.println("result = " + result);
         System.out.println(result.indexOf("A")); //return first match
 
