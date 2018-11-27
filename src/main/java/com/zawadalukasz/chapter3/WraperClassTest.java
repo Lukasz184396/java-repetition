@@ -40,5 +40,7 @@ public class WraperClassTest {
         //Character character2 = new Character(4);  //does not compile int
 
         // Character character3 = new Character('55');  //two digits does not compile
+        Integer integer = Integer.valueOf('a');
+        System.out.println(integer);
     }
 }
