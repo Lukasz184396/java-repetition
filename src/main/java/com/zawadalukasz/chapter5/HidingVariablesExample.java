@@ -34,9 +34,9 @@ class Animal {
 class JellyFish extends Animal{
     public int length = 1111;
     public void display() {
-        System.out.println("Fish static");
+        System.out.println("Fish");
     }
     public static void staticDisplay() {
-        System.out.println("Fish");
+        System.out.println("Fish static");
     }
 }
