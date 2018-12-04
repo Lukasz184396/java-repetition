@@ -8,14 +8,33 @@ public class HidingVariablesExample {
         System.out.println(jellyFish.length);  //1111
         System.out.println(animal.length);     //2
         System.out.println(animal2.length);    //2
+        animal.display();                      //Animal
+        animal2.display();                     //Fish
+        jellyFish.display();                   //Fish
+        animal.staticDisplay();                //Animal static
+        animal2.staticDisplay();               //Animal static
+        jellyFish.staticDisplay();             //Fish static
+
     }
+
 }
 
 class Animal {
     public int length = 2;
+    public void display() {
+        System.out.println("Animal");
+    }
+    public static void staticDisplay() {
+        System.out.println("Animal static");
+    }
 }
 
 class JellyFish extends Animal{
     public int length = 1111;
-
+    public void display() {
+        System.out.println("Fish static");
+    }
+    public static void staticDisplay() {
+        System.out.println("Fish");
+    }
 }
