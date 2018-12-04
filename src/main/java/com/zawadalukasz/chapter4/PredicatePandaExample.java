@@ -13,7 +13,9 @@ class Panda {
     public static void main(String[] args) {
         Panda panda = new Panda();
         panda.age = 1;
+        check(panda, (Panda p) -> p.age <5);
         check(panda, p -> p.age <5);
+        check(panda, p -> {return p.age <5;});
     }
 
     private static void check(Panda panda, Predicate<Panda> pandaPredicate) {
